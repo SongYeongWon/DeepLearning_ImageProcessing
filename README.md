@@ -2,7 +2,7 @@
 
 
 
-Digital Image Processing using MATLAB
+•Digital Image Processing using MATLAB
 
 •Learning OpenCV 3: Computer Vision in C++
 
