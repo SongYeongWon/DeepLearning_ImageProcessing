@@ -130,7 +130,7 @@ If you keep pressing the space, you can quickly label the image because you keep
 
 ## Pretrained Checkpoints
 
-The model should be selected in consideration of the accuracy and processing speed suitable for the purpose. This project used the YOLOv5l model. GPU Driver 성능에 따라 적절하게 모델을 선정해야 한다. This project used the YOLOv5l model. The model should be appropriately selected according to GPU Driver performance. It is also important to select the batch size that GPU cuda memory can allocate. Batch size 4 was applied to this model learning. If you use a better hardware GPU driver, you can use a YOLOv5l or higher model.
+The model should be selected in consideration of the accuracy and processing speed suitable for the purpose. This project used the YOLOv5l model. The model should be appropriately selected according to GPU Driver performance. It is also important to select the batch size that GPU cuda memory can allocate. Batch size = 4 was applied to this model learning. If you use a better hardware GPU driver, you can use a YOLOv5l or higher model.
 
 The results of precision and recall learned through the YOLOv5l model will be mentioned in the 4. Evaluation part.
 
