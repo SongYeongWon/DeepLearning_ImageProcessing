@@ -6,7 +6,7 @@
 
 **Author:** Song Yeong Won/ Song Tae Woong
 
-**Github:** repository link
+**Github:** [repository link](https://github.com/SongYeongWon/DeepLearning_ImageProcessing/tree/main/LAB/LAB_FINAL)
 
 **Demo Video:** [Youtube link](https://www.youtube.com/watch?v=O9p9RyBgJH4)
 
