@@ -246,7 +246,7 @@ It can be seen that the weights file is generated in the runs/train/exp(number) 
 
 | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/train_file.png" alt="img" style="zoom:67%;" /> |
 | :----------------------------------------------------------: |
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/best_pt.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/best_pt.png) |
 |              **Figure 11. Trained weight file**              |
 
 We changed the best.pt file name to bakery.pt.
