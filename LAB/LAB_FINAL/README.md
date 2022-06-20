@@ -175,7 +175,7 @@ For training using the YOLOv5 model, an image file and a labeling coordinate fil
 
 | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/txt_detail.png" alt="img" style="zoom: 67%;" /> |
 | :----------------------------------------------------------: |
-|                **Figure 7. Label txt file **                 |
+|                 **Figure 7. Label txt file**                 |
 
  Total number of Image dataset : 5,546
 
