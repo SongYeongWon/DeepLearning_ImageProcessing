@@ -29,7 +29,9 @@ Since the YOLOv5 model was directly trained and used through Custom-data, the Da
 
 * Camera height : 47[cm] from Tray
 
-  <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/env.png" alt="img" style="zoom: 60%;" />
+  | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/env.png" alt="img" style="zoom: 60%;" /> |
+  | :----------------------------------------------------------: |
+  |             **Figure 1. Experiment Environment**             |
 
 ## Software Installation
 
@@ -54,7 +56,9 @@ before starting, check if the GPU driver for the cuda version is installed.
 > nvidia-smi
 ```
 
-<img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/Drive.png" alt="img" style="zoom:67%;" />
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/Drive.png" alt="img" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+|              **Figure 2. Check CUDA Version **               |
 
 check your cuda version and donwload nvidia driver [click here](https://developer.nvidia.com/cuda-toolkit-archive)
 
@@ -82,7 +86,7 @@ requirements file 로 저장
 ### YOLOv5 Installation
 
 Go to YOLOv5 github (https://github.com/ultralytics/yolov5) and download Repository as below.
-After entering the /`yolov5-master` folder, copy the path address. Then executing Anaconda prompt in administrator mode, execute the code below sequentially (see figure below)
+After entering the /`yolov5-master` folder, copy the path address. Then executing Anaconda prompt in administrator mode, execute the code below sequentially.
 
 ```python
 conda activate py39
@@ -100,11 +104,15 @@ The DarkLabel 2.4 program was used to generate custom data. Using this program, 
 
 Go to [DarkLabel 2.4](https://github.com/darkpgmr/DarkLabel) and download the DarkLabel 2.4 program below. if it is not available, please download [here](https://darkpgmr.tistory.com/16)
 
-![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/darklabel_link.png)
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/darklabel_link.png) |
+| :----------------------------------------------------------: |
+|                  **Figure 3. DarkLabel2.4**                  |
 
 After executing DarkLabel.exe, labeling is performed using the desired image or image.
 
-![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/darklabel.png)
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/darklabel.png) |
+| :----------------------------------------------------------: |
+|               **Figure 4. DarkLabel2.4 Tool**                |
 
 
 
@@ -122,7 +130,9 @@ After executing DarkLabel.exe, labeling is performed using the desired image or 
 
 for example using darklabel2.4 program : 
 
-![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/darklabel_ex.png)
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/darklabel_ex.png) |
+| :----------------------------------------------------------: |
+|         **Figure 5. Example of using DarkLabel2.4**          |
 
 If you keep pressing the space, you can quickly label the image because you keep tracking the image with the bounding box over every frame and draw the bounding box. However, if an object is moved or obscured, it will not be accurate tracking, so such frames should be re-run after removing the image labeling.
 
@@ -147,6 +157,9 @@ The results of precision and recall learned through the YOLOv5l model will be me
 | [YOLOv5l6](https://github.com/ultralytics/yolov5/releases)   | 1280          | 53.7            | 71.3       | 1784              | 15.8               | 10.5                | 76.8       | 111.4                                    |
 | [YOLOv5x6](https://github.com/ultralytics/yolov5/releases) + [TTA](https://github.com/ultralytics/yolov5/issues/303) | 1280 1536     | 55.0 55.8       | 72.7 72.7  | 3136 -            | 26.2 -             | 19.4 -              | 140.7 -    | 209.8                                    |
 
+| **Table 1. Model Performance** |
+| :----------------------------: |
+
 Further more information : [Click here](https://github.com/ultralytics/yolov5/releases)
 
 ## 2.1 Customize datasets
@@ -155,14 +168,14 @@ Further more information : [Click here](https://github.com/ultralytics/yolov5/re
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                         Images data                          |                            Labels                            |
 
-| Figure x. Training datasets |
+| Figure 6. Training datasets |
 | :-------------------------: |
 
-For training using the YOLOv5 model, an image file and a labeling coordinate file are required as shown in Figure x. We previously generated the data in Figure x using the Dark Label program. Looking at the labeling coordinate file, it fits the YOLOv5 model as below.
+For training using the YOLOv5 model, an image file and a labeling coordinate file are required as shown in **Figure 6**. We previously generated the data in **Figure 6** using the Dark Label program. Looking at the labeling coordinate file, it fits the YOLOv5 model as below.
 
-<img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/txt_detail.png" alt="img" style="zoom: 67%;" />
-
-
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/txt_detail.png" alt="img" style="zoom: 67%;" /> |
+| :----------------------------------------------------------: |
+|                **Figure 7. Label txt file **                 |
 
  Total number of Image dataset : 5,546
 
@@ -180,15 +193,19 @@ Val image dataset path : datasets > bakery > images > val
 
 Val label dataset path : datasets > bakery > labels> val
 
-<img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/datasets.png" alt="img" style="zoom: 58%;" />
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/datasets.png" alt="img" style="zoom: 58%;" /> |
+| :----------------------------------------------------------: |
+|                 **Figure 8. Datasets path**                  |
+
+
 
 ## 2.3 create customized yaml file
 
 create new bakery.yaml file. (path : ./data)
 
-![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/bakery_yaml.png)
-
-
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/bakery_yaml.png) |
+| :----------------------------------------------------------: |
+|                 **Figure 9. yaml file path**                 |
 
 check the train and val path as follow.
 
@@ -213,9 +230,11 @@ python train.py --img 640 --batch 4 --epochs 10--data ./data/bakery.yaml --weigh
 
 When you start training, you must select img size, batch size, epochs, and model. Make sure that the bakery.yaml path is correct based on the current path running the above code. In addition, the model of yolov5 must be selected, and it can be selected from four types: s,m,l,x, and yolov5l model was used for this training. Finally, it is also important to determine the batch size. The batch size must be selected according to GPU or CPU performance, and a "cuda out of memory" error will occur if the batch size is set too large. Training is possible while gradually reducing the batch size. If the epoch is set very large, there is a risk of overfitting, and if the epoch is set low, it may become underfitting. Trial and error is required for optimal model training.
 
-The figure below is an output window when only epoch 1 is executed. Train results and weight.pt files can be found in runs/train/exp (number).
+The **Figure 10** below is an output window when only epoch 1 is executed. Train results and weight.pt files can be found in runs/train/exp (number).
 
-![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/train_prc.png)
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/train_prc.png) |
+| :----------------------------------------------------------: |
+|                **Figure 10. Model Training**                 |
 
 
 
@@ -225,13 +244,10 @@ When you proceed with model training, there are best.pt and last.pt in the file.
 
 It can be seen that the weights file is generated in the runs/train/exp(number) path.
 
-<img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/train_file.png" alt="img" style="zoom:67%;" />
-
-
-
-![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/best_pt.png)
-
-
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/train_file.png" alt="img" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/best_pt.png) |
+|              **Figure 11. Trained weight file**              |
 
 We changed the best.pt file name to bakery.pt.
 
@@ -246,7 +262,7 @@ python detect.py --weights bakery.pt --img 640 --conf 0.25 --source 1 #test with
 
 | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/detect_py.png) |
 | :----------------------------------------------------------: |
-|                         **Figure x**                         |
+|                     **Figure 12. Test**                      |
 
 
 
@@ -271,14 +287,14 @@ The algorithm has three main sections. Whole process of program algorithm as fol
 
 | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/flowchart.png" alt="img" style="zoom:67%;" /> |
 | :----------------------------------------------------------: |
-|                   **Figure 1. Flowchart**                    |
+|                   **Figure 13. Flowchart**                   |
 
 
 
 ## 3.1 Pre-processing
 ### Rounding Tray
 
-The ROI area required for object detection should be set. First, find the four vertices of the rounding tray and draw a square to determine if an object exists in the square. For this algorithm, the openvInrange function and the HoughlineP function were used. Since the original image used is a BGR scale, the surrounding tray edge is extracted by first converting it to HSV and then adjusting Inrange to Hue, Saturation, and Value. Figure x (a) is an original frame image, and (b) is a result of converting to a binary image after Inrange processing. If firstFrame = 1 is the exact line of the tray, if not, repeat until firstFrame = 0 and extract the correct line. This is the tray detection loop represented in Figure x. flowchart.
+The ROI area required for object detection should be set. First, find the four vertices of the rounding tray and draw a square to determine if an object exists in the square. For this algorithm, the openvInrange function and the HoughlineP function were used. Since the original image used is a BGR scale, the surrounding tray edge is extracted by first converting it to HSV and then adjusting Inrange to Hue, Saturation, and Value. **Figure 14 (a)** is an original frame image, and (b) is a result of converting to a binary image after Inrange processing. If firstFrame = 1 is the exact line of the tray, if not, repeat until firstFrame = 0 and extract the correct line. This is the tray detection loop represented in **Figure 13**. flowchart.
 
 * Rounding Tray using HoughlineP
 
@@ -335,16 +351,16 @@ if firstFrame == 1:
 
 | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/ori_tray.png" alt="img" style="zoom:33%;" /> | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/inrange.png" alt="img" style="zoom:33%;" /> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|                         Source Image                         |                        After Inrange                         |
+|                       Source Image (a)                       |                      After Inrange (b)                       |
 
-| **Figure x** |
-| :----------: |
+| **Figure 14. HoughLinesP** |
+| :------------------------: |
 
 Finally, the HoughLinesP is adjusted to extract the line in the Inrange. Several lines are detected through HoughLineP, and we found and used the maximum, minimum x, and y values of all extracted straight lines because only the edge of the tray should be represented by one box. Therefore, the results are as follows.
 
 | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/tray.png) |
 | :----------------------------------------------------------: |
-|                         **Figure x**                         |
+|                **Figure 15. Tray detection**                 |
 
 
 
@@ -352,7 +368,7 @@ Finally, the HoughLinesP is adjusted to extract the line in the Inrange. Several
 
 ### Image Capture
 
-The first process of post-processing is image capture. When the 'c' key is pressed, the current frame is captured and object detection is performed on the frame. Since the frame image at the moment of capture is continuously stored, pressing the 'c' key continuously uses the stored image. When 'r' is pressed, the captured frame is initialized back into the current frame. Figure x is the result of object detection when the 'c' key is input.
+The first process of post-processing is image capture. When the 'c' key is pressed, the current frame is captured and object detection is performed on the frame. Since the frame image at the moment of capture is continuously stored, pressing the 'c' key continuously uses the stored image. When 'r' is pressed, the captured frame is initialized back into the current frame. **Figure 16** is the result of object detection when the 'c' key is input.
 
 ```python
  for path, im, im0s, vid_cap, s in dataset:
@@ -394,13 +410,13 @@ The first process of post-processing is image capture. When the 'c' key is press
 
 | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/capture.png) |
 | :----------------------------------------------------------: |
-|                         **Figure x**                         |
+|                 **Figure 16. Image Capture**                 |
 
 
 
 ### Filtering Out of tray
 
-We performed the out of tray filtering process for accurate calculation. We performed filtering using the center coordinates of the object detection rounding box. If the central coordinate of the bounding box was within the tray edge area, it was determined as inside, and if it existed outside, it was determined as outside. In Figure x, objects existing outside the rounding tray are represented by a red binding box. Rounding Tray is a post-processing process that assumes a cash register where a real customer puts things up, and does not calculate objects that exist outside the cash register.
+We performed the out of tray filtering process for accurate calculation. We performed filtering using the center coordinates of the object detection rounding box. If the central coordinate of the bounding box was within the tray edge area, it was determined as inside, and if it existed outside, it was determined as outside. In **Figure 17**, objects existing outside the rounding tray are represented by a red binding box. Rounding Tray is a post-processing process that assumes a cash register where a real customer puts things up, and does not calculate objects that exist outside the cash register.
 
 ```python
 if isCal == 1:
@@ -427,13 +443,13 @@ if isCal == 1:
 
 | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/out_of_tray.png) |
 | :----------------------------------------------------------: |
-|                         **Figure x**                         |
+|               **Figure 17. Filtering result**                |
 
 
 
 ### Auto-calculation
 
-If you have distinguished the bread in the Rounding Tray after the Out of Tray filtering process, calculate the total price for the bread only. The price according to each bread class was designated in advance as shown in Figure x. The class name existing for each frame may be returned as int(cls) in integer. Therefore, we sum the prices for all objects corresponding to the class number specified in advance.
+If you have distinguished the bread in the Rounding Tray after the Out of Tray filtering process, calculate the total price for the bread only. The class name existing for each frame may be returned as int(cls) in integer. Therefore, we sum the prices for all objects corresponding to the class number specified in advance.
 
 ```python
 for *xyxy, conf, cls in reversed(det):
@@ -456,17 +472,17 @@ If you have learned by adding more kinds of bread, you can add the class number 
 
 | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/bakery_class.png) |
 | :----------------------------------------------------------: |
-|                        **Figure x.**                         |
+|                   **Figure18. Class list**                   |
 
 
 
 ## 3.3 Application
 
-We added display elements in consideration of actual commercial applications. Total price according to the total price was output, and Kakao Pay QR code was output so that actual consumers could pay. Figure x is the final result of combining three images: webcam image, qr code, and price. Looking at Figure x, the total price was set at 7,800 won. This is a price measurement for only three objects in the Rounding Tray, and it can be seen that bread outside the Rounding Tray in red is not included in the total price price. Also, for bread with Inside Rounding Tray, the price is marked for each object.
+We added display elements in consideration of actual commercial applications. Total price according to the total price was output, and Kakao Pay QR code was output so that actual consumers could pay. **Figure 19** is the final result of combining three images: webcam image, qr code, and price. Looking at **Figure 19**, the total price was set at 7,800 won. This is a price measurement for only three objects in the Rounding Tray, and it can be seen that bread outside the Rounding Tray in red is not included in the total price price. Also, for bread with Inside Rounding Tray, the price is marked for each object.
 
 | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/cal.png) |
 | :----------------------------------------------------------: |
-|                        **Figure x.**                         |
+|              **Figure 19. Application Display**              |
 
 
 
@@ -1006,23 +1022,25 @@ if __name__ == "__main__":
 
 - In this project, we learned customized datasets through the YOLOv5l model, and the training performance was very good. As can be seen from the reproduction rate and precision graph shown below, model training shows very high values. The training evaluation was performed through the test video image, and (valid results) came out somehow. As the most important goal of this project was to recognize bread in real time and enable calculation, we achieved as much as expected in terms of speed and accuracy. Therefore, it was possible to implement a fast and accurate model through a low-cost webcam and GPU.
 
-  Figure x is the result of val execution. Both Precision and Recall showed a high figure of 99%. Since training was performed using images, there is a possibility that more than a few frames have the same image. Therefore, since similar images may be validated, the precision and reproduction rate were higher than expected.
+  **Figure 20** is the result of val execution. Both Precision and Recall showed a high performance of 99%. Since training was performed using images, there is a possibility that more than a few frames have the same image. Therefore, since similar images may be validated, the precision and reproduction rate were higher than expected.
 
   | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/val_result.png) |
   | :----------------------------------------------------------: |
-  |                        **Figure x.**                         |
+  |               **Figure 20. Validation result**               |
 
   
 
-  Figure x is a graph showing F1-Score after validation. F1-Score is a value representing the harmonic mean of precision and reproducibility. Precision is the ratio of what the model classifies as true that is true. It is the ratio of predicting that the model is true among the actual true reproduction rates. Accurate classification is possible by increasing precision. However, the higher the precision, the lower the reproduction rate. Therefore, precision and reproducibility are in a trade-off relationship. Since we have to accurately classify and accurately predict actual bread, the harmonic mean, which can reasonably consider precision and reproducibility, was used as an evaluation criterion for basic model performance.
+  **Figure 22** is a graph showing F1-Score after validation. F1-Score is a value representing the harmonic mean of precision and reproducibility. Precision is the ratio of what the model classifies as true that is true. It is the ratio of predicting that the model is true among the actual true reproduction rates. Accurate classification is possible by increasing precision. However, the higher the precision, the lower the reproduction rate. Therefore, precision and reproducibility are in a trade-off relationship. Since we have to accurately classify and accurately predict actual bread, the harmonic mean, which can reasonably consider precision and reproducibility, was used as an evaluation criterion for basic model performance.
 
-  <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/f1-score.png" alt="img" style="zoom: 80%;" />
+  | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/f1-score.png" alt="img" style="zoom: 80%;" /> |
+  | :----------------------------------------------------------: |
+  |               **Figure 21. Model Evaluation**                |
   
-  Looking at Figure x, the confidence of all classes is maintained above 0.8. Therefore, it can be confirmed that the actual bread type was accurately classified.
+  Looking at **Figure 22**, the confidence of all classes is maintained above 0.8. Therefore, it can be confirmed that the actual bread type was accurately classified.
 
 | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/F1_curve.png" alt="img" style="zoom:30%;" /> |
 | :----------------------------------------------------------: |
-|                        **Figure x.**                         |
+|               **Figure 22. F1-score of Model**               |
 
 
 
