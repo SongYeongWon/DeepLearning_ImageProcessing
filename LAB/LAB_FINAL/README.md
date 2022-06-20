@@ -58,7 +58,7 @@ before starting, check if the GPU driver for the cuda version is installed.
 
 | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/Drive.png" alt="img" style="zoom:67%;" /> |
 | :----------------------------------------------------------: |
-|              **Figure 2. Check CUDA Version **               |
+|               **Figure 2. Check CUDA Version**               |
 
 check your cuda version and donwload nvidia driver [click here](https://developer.nvidia.com/cuda-toolkit-archive)
 
