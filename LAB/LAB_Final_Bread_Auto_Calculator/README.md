@@ -29,7 +29,7 @@ Since the YOLOv5 model was directly trained and used through Custom-data, the Da
 
 * Camera height : 47[cm] from Tray
 
-  | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/env.png" alt="img" style="zoom: 60%;" /> |
+  | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/env.png" alt="img" style="zoom: 60%;" /> |
   | :----------------------------------------------------------: |
   |             **Figure 1. Experiment Environment**             |
 
@@ -56,7 +56,7 @@ before starting, check if the GPU driver for the cuda version is installed.
 > nvidia-smi
 ```
 
-| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/Drive.png" alt="img" style="zoom:67%;" /> |
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/Drive.png" alt="img" style="zoom:67%;" /> |
 | :----------------------------------------------------------: |
 |               **Figure 2. Check CUDA Version**               |
 
@@ -104,13 +104,13 @@ The DarkLabel 2.4 program was used to generate custom data. Using this program, 
 
 Go to [DarkLabel 2.4](https://github.com/darkpgmr/DarkLabel) and download the DarkLabel 2.4 program below. if it is not available, please download [here](https://darkpgmr.tistory.com/16)
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/darklabel_link.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/darklabel_link.png) |
 | :----------------------------------------------------------: |
 |                  **Figure 3. DarkLabel2.4**                  |
 
 After executing DarkLabel.exe, labeling is performed using the desired image or image.
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/darklabel.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/darklabel.png) |
 | :----------------------------------------------------------: |
 |               **Figure 4. DarkLabel2.4 Tool**                |
 
@@ -130,7 +130,7 @@ After executing DarkLabel.exe, labeling is performed using the desired image or 
 
 for example using darklabel2.4 program : 
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/darklabel_ex.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/darklabel_ex.png) |
 | :----------------------------------------------------------: |
 |         **Figure 5. Example of using DarkLabel2.4**          |
 
@@ -164,7 +164,7 @@ Further more information : [Click here](https://github.com/ultralytics/yolov5/re
 
 ## 2.1 Customize datasets
 
-| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/train_image.png" alt="img" style="zoom:50%;" /> | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/train_txt.png" alt="img" style="zoom:50%;" /> |
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/train_image.png" alt="img" style="zoom:50%;" /> | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/train_txt.png" alt="img" style="zoom:50%;" /> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                         Images data                          |                            Labels                            |
 
@@ -173,7 +173,7 @@ Further more information : [Click here](https://github.com/ultralytics/yolov5/re
 
 For training using the YOLOv5 model, an image file and a labeling coordinate file are required as shown in **Figure 6**. We previously generated the data in **Figure 6** using the Dark Label program. Looking at the labeling coordinate file, it fits the YOLOv5 model as below.
 
-| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/txt_detail.png" alt="img" style="zoom: 67%;" /> |
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/txt_detail.png" alt="img" style="zoom: 67%;" /> |
 | :----------------------------------------------------------: |
 |                 **Figure 7. Label txt file**                 |
 
@@ -193,7 +193,7 @@ Val image dataset path : datasets > bakery > images > val
 
 Val label dataset path : datasets > bakery > labels> val
 
-| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/datasets.png" alt="img" style="zoom: 58%;" /> |
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/datasets.png" alt="img" style="zoom: 58%;" /> |
 | :----------------------------------------------------------: |
 |                 **Figure 8. Datasets path**                  |
 
@@ -203,7 +203,7 @@ Val label dataset path : datasets > bakery > labels> val
 
 create new bakery.yaml file. (path : ./data)
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/bakery_yaml.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/bakery_yaml.png) |
 | :----------------------------------------------------------: |
 |                 **Figure 9. yaml file path**                 |
 
@@ -232,7 +232,7 @@ When you start training, you must select img size, batch size, epochs, and model
 
 The **Figure 10** below is an output window when only epoch 1 is executed. Train results and weight.pt files can be found in runs/train/exp (number).
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/train_prc.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/train_prc.png) |
 | :----------------------------------------------------------: |
 |                **Figure 10. Model Training**                 |
 
@@ -244,7 +244,7 @@ When you proceed with model training, there are best.pt and last.pt in the file.
 
 It can be seen that the weights file is generated in the runs/train/exp(number) path.
 
-| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/train_file.png" alt="img" style="zoom:67%;" /> |
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/train_file.png" alt="img" style="zoom:67%;" /> |
 | :----------------------------------------------------------: |
 | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/best_pt.png) |
 |              **Figure 11. Trained weight file**              |
@@ -260,7 +260,7 @@ python detect.py --weights bakery.pt --img 640 --conf 0.25 --source Test_1.mp4 #
 python detect.py --weights bakery.pt --img 640 --conf 0.25 --source 1 #test with your own webcam
 ```
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/detect_py.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/detect_py.png) |
 | :----------------------------------------------------------: |
 |                     **Figure 12. Test**                      |
 
@@ -285,7 +285,7 @@ The algorithm has three main sections. Whole process of program algorithm as fol
 
 * **Flowchart**
 
-| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/flowchart.png" alt="img" style="zoom:67%;" /> |
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/flowchart.png" alt="img" style="zoom:67%;" /> |
 | :----------------------------------------------------------: |
 |                   **Figure 13. Flowchart**                   |
 
@@ -349,7 +349,7 @@ if firstFrame == 1:
        	maxY = max(endYs)
 ```
 
-| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/ori_tray.png" alt="img" style="zoom:33%;" /> | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/inrange.png" alt="img" style="zoom:33%;" /> |
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/ori_tray.png" alt="img" style="zoom:33%;" /> | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/inrange.png" alt="img" style="zoom:33%;" /> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                       Source Image (a)                       |                      After Inrange (b)                       |
 
@@ -358,7 +358,7 @@ if firstFrame == 1:
 
 Finally, the HoughLinesP is adjusted to extract the line in the Inrange. Several lines are detected through HoughLineP, and we found and used the maximum, minimum x, and y values of all extracted straight lines because only the edge of the tray should be represented by one box. Therefore, the results are as follows.
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/tray.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/tray.png) |
 | :----------------------------------------------------------: |
 |                **Figure 15. Tray detection**                 |
 
@@ -408,7 +408,7 @@ The first process of post-processing is image capture. When the 'c' key is press
 
 
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/capture.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/capture.png) |
 | :----------------------------------------------------------: |
 |                 **Figure 16. Image Capture**                 |
 
@@ -441,7 +441,7 @@ if isCal == 1:
 
 
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/out_of_tray.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/out_of_tray.png) |
 | :----------------------------------------------------------: |
 |               **Figure 17. Filtering result**                |
 
@@ -470,7 +470,7 @@ for *xyxy, conf, cls in reversed(det):
 
 If you have learned by adding more kinds of bread, you can add the class number and price to the list below.
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/bakery_class.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/bakery_class.png) |
 | :----------------------------------------------------------: |
 |                   **Figure18. Class list**                   |
 
@@ -480,7 +480,7 @@ If you have learned by adding more kinds of bread, you can add the class number 
 
 We added display elements in consideration of actual commercial applications. Total price according to the total price was output, and Kakao Pay QR code was output so that actual consumers could pay. **Figure 19** is the final result of combining three images: webcam image, qr code, and price. Looking at **Figure 19**, the total price was set at 7,800 won. This is a price measurement for only three objects in the Rounding Tray, and it can be seen that bread outside the Rounding Tray in red is not included in the total price price. Also, for bread with Inside Rounding Tray, the price is marked for each object.
 
-| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/cal.png) |
+| ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/cal.png) |
 | :----------------------------------------------------------: |
 |              **Figure 19. Application Display**              |
 
@@ -1024,7 +1024,7 @@ if __name__ == "__main__":
 
   **Figure 20** is the result of val execution. Both Precision and Recall showed a high performance of 99%. Since training was performed using images, there is a possibility that more than a few frames have the same image. Therefore, since similar images may be validated, the precision and reproduction rate were higher than expected.
 
-  | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/val_result.png) |
+  | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/val_result.png) |
   | :----------------------------------------------------------: |
   |               **Figure 20. Validation result**               |
 
@@ -1032,13 +1032,13 @@ if __name__ == "__main__":
 
   **Figure 22** is a graph showing F1-Score after validation. F1-Score is a value representing the harmonic mean of precision and reproducibility. Precision is the ratio of what the model classifies as true that is true. It is the ratio of predicting that the model is true among the actual true reproduction rates. Accurate classification is possible by increasing precision. However, the higher the precision, the lower the reproduction rate. Therefore, precision and reproducibility are in a trade-off relationship. Since we have to accurately classify and accurately predict actual bread, the harmonic mean, which can reasonably consider precision and reproducibility, was used as an evaluation criterion for basic model performance.
 
-  | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/f1-score.png" alt="img" style="zoom: 80%;" /> |
+  | <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/f1-score.png" alt="img" style="zoom: 80%;" /> |
   | :----------------------------------------------------------: |
   |               **Figure 21. Model Evaluation**                |
   
   Looking at **Figure 22**, the confidence of all classes is maintained above 0.8. Therefore, it can be confirmed that the actual bread type was accurately classified.
 
-| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_FINAL/FINAL/F1_curve.png" alt="img" style="zoom:30%;" /> |
+| <img src="https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/F1_curve.png" alt="img" style="zoom:30%;" /> |
 | :----------------------------------------------------------: |
 |               **Figure 22. F1-score of Model**               |
 
