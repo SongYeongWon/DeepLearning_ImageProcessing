@@ -81,8 +81,6 @@ import torch
 print("cuda" if torch.cuda.is_available() else "cpu")
 ```
 
-requirements file 로 저장
-
 ### YOLOv5 Installation
 
 Go to YOLOv5 github (https://github.com/ultralytics/yolov5) and download Repository as below.
