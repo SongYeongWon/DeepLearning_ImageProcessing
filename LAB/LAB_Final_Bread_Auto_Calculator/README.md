@@ -1052,7 +1052,7 @@ if __name__ == "__main__":
 Finally, if you have completed training the data, data preprocessing, and post-processing, you can check it through real-time images by executing the following code.
 
 ```python
-python detect.py --weights best_epoch_100.pt --img 640 --conf 0.25 --source 1
+python detect.py --weights yolov5l_bakery.pt --img 640 --conf 0.25 --source 1
 ```
 
 
