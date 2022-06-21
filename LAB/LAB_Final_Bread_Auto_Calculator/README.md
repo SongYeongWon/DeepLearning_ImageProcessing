@@ -254,7 +254,7 @@ bakery.py file path : /yolov5-master
 You can test through the weight.pt file trained through the code below. Download Test_bakery.mp4
 
 ```python
-python detect.py --weights yolov5_bakery.pt --img 640 --conf 0.25 --source Test_bakery.mp4 #test video
+python detect.py --weights yolov5l_bakery.pt --img 640 --conf 0.25 --source Test_bakery.mp4 #test video
 python detect.py --weights bakery.pt --img 640 --conf 0.25 --source 1 #test with your own webcam
 ```
 
