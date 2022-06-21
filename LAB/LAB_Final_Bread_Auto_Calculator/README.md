@@ -247,14 +247,14 @@ It can be seen that the weights file is generated in the runs/train/exp(number) 
 | ![img](https://raw.githubusercontent.com/SongYeongWon/DeepLearning_ImageProcessing/main/LAB/LAB_Final_Bread_Auto_Calculator/FINAL/best_pt.png) |
 |              **Figure 11. Trained weight file**              |
 
-We changed the best.pt file name to bakery.pt.
+We changed the best.pt file name to yolov5_bakery.pt.
 
 bakery.py file path : /yolov5-master
 
 You can test through the weight.pt file trained through the code below. Download Test_bakery.mp4
 
 ```python
-python detect.py --weights bakery.pt --img 640 --conf 0.25 --source Test_bakery.mp4 #test video
+python detect.py --weights yolov5_bakery.pt --img 640 --conf 0.25 --source Test_bakery.mp4 #test video
 python detect.py --weights bakery.pt --img 640 --conf 0.25 --source 1 #test with your own webcam
 ```
 
