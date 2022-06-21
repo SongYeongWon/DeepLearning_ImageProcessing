@@ -1061,7 +1061,7 @@ python detect.py --weights yolov5l_bakery.pt --img 640 --conf 0.25 --source 1
 
 # Reference
 
-YOLOv5 : [Click here]([ultralytics/yolov5: YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite (github.com)](https://github.com/ultralytics/yolov5))
+YOLOv5 : [Click here](https://github.com/ultralytics/yolov5)
 
 YOLOv5 installation : [Click here](https://ykkim.gitbook.io/dlip/deep-learning-for-perception/dp-tutorial/tutorial-yolov5-in-pytorch#run-yolov5-in-local-pc-with-pytorch-hub)
 
